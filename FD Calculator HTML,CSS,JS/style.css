@@ -1,0 +1,108 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Body Styling */
+body {
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Container Styling */
+.container {
+    background: rgba(20, 20, 20, 0.95);
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #00ffff, 0 0 30px #ff00ff;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    animation: flicker 2s infinite;
+}
+
+@keyframes flicker {
+    0%, 100% { box-shadow: 0 0 20px #00ffff, 0 0 60px #ff00ff; }
+    50% { box-shadow: 0 0 40px #ff00ff, 0 0 80px #00ffff; }
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #ff00ff;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #00ffff;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: none;
+    background: rgba(50, 50, 50, 0.9);
+    color: #fff;
+    font-size: 1rem;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: 2px solid #ff00ff;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+/* Button Styling */
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 0 15px #00ffff, 0 0 30px #ff00ff;
+}
+
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #00ffff, 0 0 40px #ff00ff;
+}
+
+/* Result Section */
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #00ffff;
+    border-radius: 5px;
+    background: rgba(50, 50, 50, 0.8);
+    color: #ff00ff;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #00ffff;
+}

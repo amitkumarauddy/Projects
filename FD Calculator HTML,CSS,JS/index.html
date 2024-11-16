@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyberpunk FD Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FD Calculator</h1>
+        <form id="fdForm">
+            <div class="input-group">
+                <label for="principal">Principal Amount:</label>
+                <input type="number" id="principal" placeholder="Enter amount" required>
+            </div>
+            <div class="input-group">
+                <label for="rate">Annual Interest Rate (%):</label>
+                <input type="number" id="rate" placeholder="Enter rate" step="0.01" required>
+            </div>
+            <div class="input-group">
+                <label for="time">Time Period (Years):</label>
+                <input type="number" id="time" placeholder="Enter years" required>
+            </div>
+            <div class="input-group">
+                <label for="currency">Currency:</label>
+                <select id="currency">
+                    <option value="$">USD ($)</option>
+                    <option value="€">Euro (€)</option>
+                    <option value="£">Pound (£)</option>
+                    <option value="₹">Rupee (₹)</option>
+                </select>
+            </div>
+            <button type="button" id="calculateBtn">Calculate</button>
+        </form>
+        <div id="result" class="result">
+            <h2>Result</h2>
+            <p id="output">Your maturity amount will appear here.</p>
+        </div>
+        <footer>
+            <p>Author: <span id="author">Github - amitkumarauddy</span></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
