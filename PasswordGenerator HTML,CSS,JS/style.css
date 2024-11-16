@@ -1,0 +1,114 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Body Styling */
+body {
+    background: #000;
+    color: #00ff00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    background: rgba(0, 0, 0, 0.9);
+    border: 2px solid #00ff00;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ff00, 0 0 30px #008000;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #84ff00;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #84ff00;
+    font-weight: bold;
+}
+
+/* Input Group */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #84ff00;
+    font-weight: bold;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background: #1a1a1a;
+    color: #84ff00;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background: #84ff00;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #008000;
+    transform: scale(1.05);
+}
+
+/* Password Result */
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #84ff00;
+    border-radius: 5px;
+    background: #1a1a1a;
+    color: #84ff00;
+    font-size: 1.2rem;
+    font-weight: bold;
+    word-break: break-all;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #84ff00;
+    text-align: center;
+}
