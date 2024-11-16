@@ -1,0 +1,111 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+    background: #0d0d0d;
+    color: #00ffcc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    background: rgba(0, 0, 0, 0.85);
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00ffcc, 0 0 50px #008080;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 20px #00ffcc, 0 0 50px #008080;
+    }
+    50% {
+        box-shadow: 0 0 30px #00ffcc, 0 0 60px #00cccc;
+    }
+}
+
+/* Headings */
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #00ffcc;
+    font-weight: bold;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    color: #00ffcc;
+    font-weight: bold;
+}
+
+/* Input Field */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #1a1a1a;
+    color: #00ffcc;
+    font-size: 1rem;
+    text-align: center;
+    box-shadow: 0 0 10px #00ffcc inset;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: #00ffcc;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: #008080;
+    transform: scale(1.05);
+}
+
+/* Result Section */
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #00ffcc;
+    border-radius: 5px;
+    background: #1a1a1a;
+    color: #00ffcc;
+    font-size: 1.1rem;
+    font-weight: bold;
+    word-break: break-word;
+    text-shadow: 0 0 10px #00ffcc;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color: #00ffcc;
+    text-align: center;
+}
