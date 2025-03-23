@@ -7,7 +7,8 @@
 </head>
 <body>
     <h2>
-        <span id="entername">Enter Name</span>
+        This is the link : 
+        <span id="entername"></span>
     </h2>
 
 
@@ -15,9 +16,16 @@
     <script>
         var url = prompt("Enter a URL: ");
 
-        if(url.slice(0,5) == "https"){
-            alert("wooooo");
+        if(url == null){
+            alert("Missing Input");
         }
+        else{
+            if(url.slice(0,5) != "https"){
+            url = "https://" + url;
+            }
+        }   
+
+        var spanNode = document.getElementById("entername").innerHTML = "<a href=" + url + ">" + url + "</a";
 
 
     </script>
